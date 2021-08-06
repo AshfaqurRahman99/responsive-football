@@ -147,7 +147,7 @@ button a{
 }
 
 /* responsive for mobile  */
-@media (max-width: 688px) { 
+@media (max-width: 480px) { 
 
     h1{
         font-size: 36px;
