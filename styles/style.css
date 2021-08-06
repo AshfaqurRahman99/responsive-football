@@ -1,4 +1,5 @@
 /* fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* common styles and utilities */
@@ -67,6 +68,7 @@ button a{
 } */
 
 /* ----- Player's Card Style ------- */
+
 .players{
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +108,7 @@ button a{
 }
 
 /* Highlight Match Area Styles */
+
 .highlight-area{
     width: 1033px;
     height: 427px;
@@ -128,6 +131,7 @@ button a{
 }
 
 /* Footer Area Styles */
+
 .footer-area{
     width: 480px;
     border: 1px solid red;
@@ -140,4 +144,92 @@ button a{
 }
 .fab{
     color: gray;
+}
+
+/* responsive for mobile  */
+@media (max-width: 360px) { 
+
+    h1{
+        font-size: 36px;
+    }
+
+    /* Copa America Intro Styles */
+    .header-area{
+        width: 100%;
+        background-color: #2D25A0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 50px;
+    }
+    .intro-section{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        /* grid-template-columns: repeat(2, 1fr);  
+        grid-column-gap: 102px; */
+    }
+    .intro-title{
+        width: 300px;
+        justify-items: center;
+    }
+    .intro-image{
+        padding-top: 50px;
+    }
+    .intro-image img{
+        width: 90%;
+    }
+
+    /* ----- Player's Card Style ------- */
+    .container{
+        width: 360px;
+        margin: 50px 0px;
+    }
+    .players{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* grid-template-columns: repeat(3, 1fr); */
+        padding-left: 10px;
+    }
+
+    
+    /* Highlight Match Area Styles */
+
+    .highlight-area{
+        width: 360px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 80px;
+        padding-left: 20px;
+    }
+    .highlight-image img{
+        width: 328px;
+        height: 248px;
+    }
+    .highlight-details{
+        padding: 20px;
+    }
+    .highlight-details h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .footer-area{
+        width: 360;
+        border: 1px solid red;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .footer-area img{
+        width: 320px;
+    }
+    .fab{
+        color: gray;
+    }
 }
